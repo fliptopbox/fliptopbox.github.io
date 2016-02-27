@@ -13,21 +13,25 @@ Here are some things I have started to collect that replace to Nuke, and linux. 
 For mac user on "El Capitan", you will need to ensure you have the most up-to-date version of Xcode (v7.2.1) and home-brew (v0.9.5) installed and working before you continue.
 
 	# install openEXR
-	brew install opener
+	brew install openexr
 	
 	# install imagemagic (with EXR support)
 	brew install imagemagick --with-openexr
 	
+	# check "openexr" is configured
+	convert -list configure | grep DELEGATES
 
 ## Bash scripts
 
 Loop through a directory of .exr files, and convert them to .jpg, and delete the massive original so that you can keep disk space low.
 
+	#!/bin/bash/
+
 	for ME in *.exr;
 	do
-		# the "&&" stops the delete if errors occur
-		convert $ME ${ME%.exr}.jpg && rm $ME;
-	done;
+      	# the "&&" stops the delete if errors occur
+		convert $ME ${ME%.exr}.jpg && rm $ME && echo "$ME complete"
+	done
 
 Open a text file, and use the contents as an array to rename files so that they correspond to the list in the text file.
 
