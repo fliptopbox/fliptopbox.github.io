@@ -28,6 +28,7 @@ function delayCreateScene() {
 
     SceneLoader.Append('./scenes/', 'scene.glb', scene);
 
+    window.camera = camera;
     camera.setPosition(pos);
     camera.attachControl(canvas, true);
 
@@ -35,7 +36,6 @@ function delayCreateScene() {
     firstPostition(camera);
     colorLoop();
 
-    window.camera = camera;
     return scene;
 }
 
@@ -46,26 +46,26 @@ function createDefaultEngine() {
     });
 }
 
-function firstPostition(camera) {
+function firstPostition(cam, radius = 2) {
     // animate into fist position
-    let { alpha, beta } = camera;
-    for (let s = 0, i = 0; i < 4; i += 0.01) {
+    let { alpha, beta } = cam;
+    for (let s = 0, i = 0; i < radius; i += 0.01) {
         const q = Number(i);
         s += 1;
         setTimeout(function() {
             //console.log(q, s, q * 12);
-            camera.radius = Number(q);
-            camera.beta = beta * (q / 4);
-            camera.alpha = alpha * (q / 4);
+            cam.radius = Number(q);
+            cam.beta = beta * (q / radius);
+            cam.alpha = alpha * (q / radius);
         }, s * 5);
     }
 }
 
-function clampMouseWheel(camera, bool = true) {
-    if(!bool) return;
+function clampMouseWheel(cam, clamp = true) {
+    if(!clamp) return;
     // clamp the mouse wheel from zooming
-    camera.lowerRadiusLimit = camera.radius;
-    camera.upperRadiusLimit = camera.radius;
+    cam.lowerRadiusLimit = cam.radius;
+    cam.upperRadiusLimit = cam.radius;
 }
 
 function colorLoop() {

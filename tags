@@ -151,7 +151,7 @@ body	_site/assets/main.css	/^body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, h
 body	js/script.js	/^const body = document.querySelector('body');$/;"	C
 canvas	js/script.js	/^const canvas = document.getElementById('renderCanvas');$/;"	C
 categories: jekyll update	_posts/2020-01-26-welcome-to-jekyll.markdown	/^categories: jekyll update$/;"	s
-clampMouseWheel	js/script.js	/^function clampMouseWheel(camera, bool = true) {$/;"	f
+clampMouseWheel	js/script.js	/^function clampMouseWheel(cam, clamp = true) {$/;"	f
 code	_site/assets/main.css	/^code { padding: 1px 5px; }$/;"	s
 code	_site/assets/main.css	/^pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #e/;"	s
 colorLoop	js/script.js	/^function colorLoop() {$/;"	f
@@ -167,7 +167,7 @@ figcaption	_site/assets/main.css	/^figcaption { font-size: 14px; }$/;"	s
 figure	_site/assets/main.css	/^body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; paddin/;"	s
 figure	_site/assets/main.css	/^h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px/;"	s
 figure > img	_site/assets/main.css	/^figure > img { display: block; }$/;"	s
-firstPostition	js/script.js	/^function firstPostition(camera) {$/;"	f
+firstPostition	js/script.js	/^function firstPostition(cam, radius = 2) {$/;"	f
 flickr	_site/assets/minima-social-icons.svg	/^<symbol id="flickr" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miter/;"	i
 github	_site/assets/minima-social-icons.svg	/^<symbol id="github" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miter/;"	i
 googleplus	_site/assets/minima-social-icons.svg	/^<symbol id="googleplus" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-m/;"	i
