@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>FLIPTOPBOX</title>
         <link rel="stylesheet" href="./assets/css/styles.css" />
-
-        <!-- Babylon.js -->
-        <script src="https://preview.babylonjs.com/babylon.js"></script>
+        {% include meta.html %}
         <!-- 
-            <script src="https://preview.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
-            <script src="https://preview.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
-            <script src="https://preview.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
-            <script src="https://preview.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+            Babylon.js (v4.1.0-beta.22)
+            https://github.com/BabylonJS/Babylon.js/tree/master/dist 
         -->
-        <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+        <script src="./js/babylon.js"></script>
+        <script src="./js/babylonjs.loaders.min.js"></script>
 
     </head>
     <body>
         <canvas id="renderCanvas"></canvas>
         <script src="./js/script.js"></script>
-        <!-- div class="nav">{{ content }}</div -->
+        <div class="content">{{ content }}</div>
+        {% include mouse-icons.html %}
     </body>
 </html>

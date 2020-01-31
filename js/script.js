@@ -1,5 +1,5 @@
 
-const {Scene, ArcRotateCamera, Vector3, SceneLoader, Engine} = BABYLON;
+const {Scene, Color4, ArcRotateCamera, Vector3, SceneLoader, Engine} = BABYLON;
 const body = document.querySelector('body');
 const canvas = document.getElementById('renderCanvas');
 
@@ -77,7 +77,9 @@ function colorLoop() {
         hsl[0] = hsl[0] % 100;
         let [hue, sat, val] = hsl;
         var bg = hslToRgb(hue / 100, sat, val);
-        scene.clearColor = bg;
+        // scene.clearColor = bg;
+        scene.clearColor = new Color4(0,0,0,0);
+        
     }, 150);
 }
 
