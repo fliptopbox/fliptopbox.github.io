@@ -3,7 +3,7 @@ layout: default
 
 title: FLIPTOPBOX
 description: Lifedrawer. Filmmaker. Storyteller. JavaScripter. Designer. Coffee drinker. Cryptomancer.
-image: ./assets/twitter-image.jpg
+image: ./assets/twitter-summary.jpg
 author: "@fliptopbox13"
 host: "@fliptopbox13"
 ---
