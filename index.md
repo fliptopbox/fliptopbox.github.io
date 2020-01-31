@@ -1,12 +1,8 @@
 ---
 layout: default
 
-host: "@github"
-author: "@fliptopbox13"
-
-title: FLIPTOPBOX
-description: Lifedrawer. Filmmaker. Storyteller. JavaScripter. Designer. Coffee drinker. Cryptomancer.
-image: /assets/twitter-summary.jpg
+host_username: "@github"
+card_summary_image: /assets/twitter-summary.jpg
 ---
 
 <a href="https://fliptopbox.com/">
