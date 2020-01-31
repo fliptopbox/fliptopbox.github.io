@@ -1,11 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 
 title: FLIPTOPBOX
-description: FLIPTOPBOX - Lifedrawer. Filmmaker. Storyteller. JavaScripter. Designer. Coffee drinker. Cryptomancer.
-image: ./assets/social-image.png
+description: Lifedrawer. Filmmaker. Storyteller. JavaScripter. Designer. Coffee drinker. Cryptomancer.
+image: ./assets/twitter-image.png
 author: "@fliptopbox13"
 host: "@fliptopbox13"
 ---
